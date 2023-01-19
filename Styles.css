@@ -4,17 +4,28 @@
     box-sizing: border-box;
 }
 
-.content_Spaces{
+.content_SpacesPlayer1, .content_SpacesPlayer2{
     display: grid;
-    grid-template-columns: repeat(20, 20px);
-    grid-template-rows: repeat(20, 20px);
-    gap: 20px;
+    grid-template-columns: repeat(11, 25px);
+    grid-template-rows: repeat(11, 25px);
+    gap: 3px;
+    background-color: #000000;
+    width: min-content;
+    border-radius: 3px;
+    padding: 3px;
 }
 
 .drawer{
     background-color: red;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+.tittle-player{
+    grid-column: 1/ 12;
+    color:aliceblue;
+    text-align: center;
 }
 
 .drawer:hover{
